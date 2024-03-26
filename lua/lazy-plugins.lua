@@ -44,6 +44,8 @@ require('lazy').setup({
 
   require 'kickstart/plugins/nvim-tree',
 
+  require 'kickstart/plugins/transparent',
+
   -- NOTE: Next step on your Neovim journey: Add/Configure additional plugins for Kickstart
   --
   -- require 'kickstart.plugins.debug',
