@@ -37,6 +37,15 @@ return {
         'NvimTreeNormalFloat',
         'NvimTreeNormalNC',
         'NvimTreeWinSeparator',
+        'TelescopePreviewNormal',
+        'TelescopeResultsNormal',
+        'TelescopePromptNormal',
+        'TelescopePreviewBorder',
+        'TelescopeResultsBorder',
+        'TelescopePromptBorder',
+        'TelescopePreviewTitle',
+        'TelescopeResultsTitle',
+        'TelescopePromptTitle',
       },
       exclude_groups = {}, -- table: groups you don't want to clear
     }

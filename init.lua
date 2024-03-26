@@ -13,6 +13,14 @@ vim.g.have_nerd_font = true
 
 vim.g.transparent_groups = vim.list_extend(vim.g.transparent_groups or {}, { 'ExtraGroup' })
 
+-- Fixes Telescope Prompt Colours
+vim.api.nvim_create_autocmd('VimEnter', {
+  callback = function()
+    vim.cmd 'highlight TelescopePromptBorder guifg=#27a1b9'
+    vim.cmd 'highlight TelescopePromptTitle guifg=#27a1b9'
+  end,
+})
+
 -- [[ Setting options ]]
 require 'options'
 
@@ -27,7 +35,3 @@ require 'lazy-plugins'
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
--- comment
--- comment
--- comment
--- comment
