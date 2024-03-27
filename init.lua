@@ -11,6 +11,9 @@ vim.g.loaded_netrwPlugin = 1
 -- Set to true if you have a Nerd Font installed
 vim.g.have_nerd_font = true
 
+-- python option - Neovim install website
+vim.g.python3_host_prog = 'C:/Users/natha/Desktop/Code/python-projects/project-1/Scripts/python.exe'
+
 vim.g.transparent_groups = vim.list_extend(vim.g.transparent_groups or {}, { 'ExtraGroup' })
 
 -- Fixes Telescope Prompt Colours

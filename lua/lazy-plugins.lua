@@ -46,6 +46,8 @@ require('lazy').setup({
 
   require 'kickstart/plugins/transparent',
 
+  require 'kickstart/plugins/toggleterm',
+
   -- NOTE: Next step on your Neovim journey: Add/Configure additional plugins for Kickstart
   --
   -- require 'kickstart.plugins.debug',
@@ -55,16 +57,16 @@ require('lazy').setup({
   -- TODO:
   -- [x] get bracket completion plugin
   -- [x] file browser
-  -- [ ] toggle terminal
+  -- [x] toggle terminal
   -- [ ] setup debugger for cpp, python, js and use it as a lightweight debugger with Visual Studio open
   -- [ ] get buffer tabs plugin
   -- [x] check difference between space s / and space s g TLDR: space s / is grep cwd + open files
-  -- [ ] save settings to github
-  -- [ ] git integration
-  -- [ ] theme switcher, transparency as well
-  -- [ ] keybind for quicksaving, or setup autosave
-  -- [ ] setup keybinds for formatting and saving
-  -- [ ] how to get python virtual environments plugin
+  -- [x] save settings to github
+  -- [ ] lazygit integration
+  -- [x] theme switcher, transparency as well
+  -- [x] keybind for quicksaving, or setup autosave
+  -- [x] setup keybinds for formatting and saving (nevermind, it formats on save)
+  -- [x] fix go-to-reference/go-to-definition lag (fixed, issue was that some lsps(like pyright) don't start (but it did?) unless there is a file in the directory that signals the root of the of the project, the default in this case was a .git folder, which was not found. see https://github.com/neovim/nvim-lspconfig#example-override-some-defaults, the troubleshooting section explains this)
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.

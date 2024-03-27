@@ -61,4 +61,13 @@ vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
 
--- vim: ts=2 sts=2 sw=2 et
+-- Set tab spacing (overrides vim-sleuth plugin i think?)
+-- vim.opt.smarttab = true
+-- vim.opt.expandtab = true
+-- vim.opt.tabstop = 4
+-- vim.opt.shiftwidth = 4
+-- vim.opt.softtabstop = 4
+
+vim.opt.swapfile = false
+
+-- vim: ts=4 sts=4 sw=4 et
