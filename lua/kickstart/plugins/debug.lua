@@ -23,6 +23,7 @@ return {
 
     -- Add your own debuggers here
     'leoluz/nvim-dap-go',
+    'Microsoft/vscode-cpptools',
   },
   config = function()
     local dap = require 'dap'
@@ -42,6 +43,15 @@ return {
       ensure_installed = {
         -- Update this to ensure that you have the debuggers for the langs you want
         'delve',
+      },
+    }
+
+    dap.adapters.cppdbg = {
+      id = 'cppdbg',
+      type = 'executable',
+      command = 'C:\\Users\\natha\\.vscode\\extensions\\ms-vscode.cpptools-1.19.9\\debugAdapters\\bin\\OpenDebugAD7.exe',
+      options = {
+        detached = false,
       },
     }
 
