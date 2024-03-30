@@ -48,6 +48,8 @@ require('lazy').setup({
 
   require 'kickstart/plugins/toggleterm',
 
+  require 'kickstart/plugins/kanagawa',
+
   -- NOTE: Next step on your Neovim journey: Add/Configure additional plugins for Kickstart
   --
   require 'kickstart.plugins.debug',
